@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
   
   def create
+    session[:user_name] = params[:user_name]
   end
   
   def destroy
