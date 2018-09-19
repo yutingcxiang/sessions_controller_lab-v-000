@@ -4,8 +4,10 @@ class SessionsController < ApplicationController
   
   def create
     session[:username] = params[:username]
+    redirect to '/'
   end
   
   def destroy
+    
   end
 end
